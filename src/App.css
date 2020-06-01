@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.input-element {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.caption {
+    position: relative;
+    display: inline-block;
+    top: -60%;
+    width: 100%;
+    text-align: center;
+
+    pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.manager {
+    width: 70%;
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.manager form {
+    margin-top: 20px;
+    height: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-photos {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-photos .photo-item {
+    flex: 0 0 31%;
+    height: 170px;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid #DADADA;
+}
+
+.flex-photos .photo-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.photo-item button:before {
+    content: ' \25CF';
+    font-size: 35px;
+    color: #c1c1c1;
+    position: absolute;
+    top: -15px;
+    left: -2px;
+}
+
+.photo-item button:after {
+    content: '✖';
+    font-size: 9px;
+    color: #F1F1F1;
+    left: 5px;
+    position: absolute;
+    top: 4px;
+    font-weight: bold;
+}
+
+
+.photo-item button {
+
+    color: white;
+    top: -100%;
+    right: -82%;
+    position: relative;
+    display: block;
+    /*  z-index:100000;*/
+    background: none;
+    border: none;
+
+}
+
+.click-element {
+    border: 2px solid #C2C1C1;
+    background-color: #F2F1F1;
+    border-radius: 25px;
+    height: 125px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 10px 5px 5px -2px #888;
+}
+
+.img-container {
+    height: 100%;
 }
