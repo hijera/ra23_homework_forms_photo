@@ -25,4 +25,8 @@ function Photos(props) {
     );
 }
 
+Photos.defaultProps={
+    list:[]
+};
+
 export default Photos;

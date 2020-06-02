@@ -6,7 +6,7 @@ import shortid from 'shortid';
 PhotoManager.propTypes = {};
 
 function PhotoManager(props) {
-    const fileRef = useRef();
+
     const [photos, setPhoto] = useState([]);
 
     const fileToDataUrl = file => {
@@ -39,7 +39,7 @@ function PhotoManager(props) {
         <div className={"manager"}>
             <form>
                 <div className={"click-element"}>
-                    <input type="file" className={"input-element"} multiple={true} ref={fileRef}
+                    <input type="file" className={"input-element"} multiple={true}
                            onChange={handleSelect}/>
                     <span className={'caption'}>Click to Select</span></div>
             </form>
